@@ -1,5 +1,4 @@
 import { connect } from 'react-redux'
-import { toggleTodo } from '../actions'
 import AllCommentList from '../components/AllCommentList'
 
 const getVisibleComments = (comments, filter) => {
@@ -16,13 +15,8 @@ const mapStateToProps = (state) => ({
   comments: getVisibleComments(state.comments.present, state.visibilityFilter)
 })
 
-const mapDispatchToProps = ({
-  onTodoClick: toggleTodo
-})
 
 const VisibleCommentList = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(AllCommentList)
+  mapStateToProps)(AllCommentList)
 
 export default VisibleCommentList

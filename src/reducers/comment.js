@@ -8,11 +8,7 @@ const comment = (state, action) => {
         text: action.text,
         completed: false
       }
-    case 'TOGGLE_COMMENT':
-      if (state.id !== action.id) {
-        return state
-      }
-
+ 
       return {
         ...state,
         completed: !state.completed
@@ -29,10 +25,7 @@ const comments = (state = [], action) => {
         ...state,
         comment(undefined, action)
       ]
-    case 'TOGGLE_COMMENT':
-      return state.map(t =>
-        comment(t, action)
-      )
+   
     default:
       return state
   }
