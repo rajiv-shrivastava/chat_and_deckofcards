@@ -2,13 +2,13 @@ import undoable from 'redux-undo'
 
 const todo = (state, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case 'ADD_COMMENT':
       return {
         id: action.id,
         text: action.text,
         completed: false
       }
-    case 'TOGGLE_TODO':
+    case 'TOGGLE_COMMENT':
       if (state.id !== action.id) {
         return state
       }
@@ -22,14 +22,14 @@ const todo = (state, action) => {
   }
 }
 
-const todos = (state = [], action) => {
+const comments = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case 'ADD_COMMENT':
       return [
         ...state,
         todo(undefined, action)
       ]
-    case 'TOGGLE_TODO':
+    case 'TOGGLE_COMMENT':
       return state.map(t =>
         todo(t, action)
       )
@@ -38,6 +38,6 @@ const todos = (state = [], action) => {
   }
 }
 
-const undoableTodos = undoable(todos)
+const undoableTodos = undoable(comments)
 
 export default undoableTodos

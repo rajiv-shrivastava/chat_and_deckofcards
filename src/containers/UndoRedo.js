@@ -15,8 +15,8 @@ let UndoRedo = ({ canUndo, canRedo, onUndo, onRedo }) => (
 )
 
 const mapStateToProps = (state) => ({
-  canUndo: state.todos.past.length > 0,
-  canRedo: state.todos.future.length > 0
+  canUndo: state.comments.past.length > 0,
+  canRedo: state.comments.future.length > 0
 })
 
 const mapDispatchToProps = ({

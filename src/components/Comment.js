@@ -4,7 +4,7 @@ const Comment = ({ onClick, completed, text,name }) => (
   <li className="well"
     onClick={onClick}
     >
-    {text} {name}
+    {text} 
   </li>
 )
 

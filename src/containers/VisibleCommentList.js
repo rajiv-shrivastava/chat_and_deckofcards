@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
 import { toggleTodo } from '../actions'
-import TodoList from '../components/TodoList'
+import AllCommentList from '../components/AllCommentList'
 
-const getVisibleTodos = (todos, filter) => {
+const getVisibleComments = (comments, filter) => {
   switch (filter) {
     case 'SHOW_ALL':
-      return todos
+      return comments
     
     default:
       throw new Error('Unknown filter: ' + filter)
@@ -13,7 +13,7 @@ const getVisibleTodos = (todos, filter) => {
 }
 
 const mapStateToProps = (state) => ({
-  todos: getVisibleTodos(state.todos.present, state.visibilityFilter)
+  comments: getVisibleComments(state.comments.present, state.visibilityFilter)
 })
 
 const mapDispatchToProps = ({
@@ -23,6 +23,6 @@ const mapDispatchToProps = ({
 const VisibleCommentList = connect(
   mapStateToProps,
   mapDispatchToProps
-)(TodoList)
+)(AllCommentList)
 
 export default VisibleCommentList
