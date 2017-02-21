@@ -1,8 +1,9 @@
 let nextTodoId = 0
-export const addTodo = (text) => ({
+export const addTodo = (text,name) => ({
   type: 'ADD_COMMENT',
   id: nextTodoId++,
-  text
+  text,
+  name
 })
 
 export const setVisibilityFilter = (filter) => ({

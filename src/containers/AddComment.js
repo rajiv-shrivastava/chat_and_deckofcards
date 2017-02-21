@@ -3,7 +3,12 @@ import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 
 let AddComment = ({ dispatch }) => {
-  let input
+  let input, name="john"
+
+  const handleChange = (e) => {
+    name= e.target.value;
+
+  }
 
   return (
     <div>
@@ -12,15 +17,30 @@ let AddComment = ({ dispatch }) => {
         if (!input.value.trim()) {
           return
         }
-        dispatch(addTodo(input.value))
+        dispatch(addTodo(input.value, name))
         input.value = ''
       }}>
       <div className="col-sm-10">
-        <input ref={node => {
-          input = node
-        }} className="form-control" />
-       </div>
-        <span class="col-sm-2" > </span>
+            <div className="col-sm-7">
+                
+              <input ref={node => {
+                input = node
+              }} className="form-control" />
+             </div>
+
+            <div className="col-sm-3">
+            <select  onChange={(value) =>handleChange(value)}>
+                <option value="john">John</option>
+                <option value="bob">Bob</option>
+                <option selected value="wisely">Wisely</option>
+                <option value="shawn">Shawn</option>
+              </select>
+             </div>
+
+              
+      </div>
+
+        <span className="col-sm-2" > </span>
         <button type="submit" className="btn btn-primary">
           Add Your Comment
         </button>

@@ -3,9 +3,11 @@ import undoable from 'redux-undo'
 const comment = (state, action) => {
   switch (action.type) {
     case 'ADD_COMMENT':
+    console.log('222222222222222', action);
       return {
         id: action.id,
         text: action.text,
+        name: action.name,
         completed: false
       }
  
