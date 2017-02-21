@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react'
-import Todo from './Todo'
+import Comment from './Comment'
 
 const AllCommentList = ({ comments, onTodoClick }) => (
   <ul>
-    {comments.map(todo =>
-      <Todo
-        key={todo.id}
-        {...todo}
-        onClick={() => onTodoClick(todo.id)}
+    {comments.map(a_comment =>
+      <Comment
+        key={a_comment.id}
+        {...a_comment}
+        onClick={() => onTodoClick(a_comment.id)}
       />
     )}
   </ul>

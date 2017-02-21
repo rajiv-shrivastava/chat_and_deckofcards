@@ -1,6 +1,6 @@
 import undoable from 'redux-undo'
 
-const todo = (state, action) => {
+const comment = (state, action) => {
   switch (action.type) {
     case 'ADD_COMMENT':
       return {
@@ -27,11 +27,11 @@ const comments = (state = [], action) => {
     case 'ADD_COMMENT':
       return [
         ...state,
-        todo(undefined, action)
+        comment(undefined, action)
       ]
     case 'TOGGLE_COMMENT':
       return state.map(t =>
-        todo(t, action)
+        comment(t, action)
       )
     default:
       return state
