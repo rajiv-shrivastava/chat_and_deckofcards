@@ -1,13 +1,11 @@
 import React from 'react'
-import Footer from './Footer'
 import AddComment from '../containers/AddComment'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import VisibleCommentList from '../containers/VisibleCommentList'
 import UndoRedo from '../containers/UndoRedo'
 
 const App = () => (
   <div>
-    <VisibleTodoList />
-    <Footer />
+    <VisibleCommentList />
     <br />
         <AddComment />
 <br />
@@ -17,3 +15,4 @@ const App = () => (
 )
 
 export default App
+
