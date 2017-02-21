@@ -32,7 +32,7 @@ let AddComment = ({ dispatch }) => {
             <select  onChange={(value) =>handleChange(value)}>
                 <option value="john">John</option>
                 <option value="bob">Bob</option>
-                <option selected value="wisely">Wisely</option>
+                <option  value="wisely">Wisely</option>
                 <option value="shawn">Shawn</option>
               </select>
              </div>

@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react'
 import Comment from './Comment'
 
-const AllCommentList = ({ comments, onTodoClick }) => (
+const AllCommentList = ({ comments}) => (
   <ul>
     {comments.map(a_comment =>
       <Comment
         key={a_comment.id}
         {...a_comment}
-        onClick={() => onTodoClick(a_comment.id)}
+       
       />
     )}
   </ul>
