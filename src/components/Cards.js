@@ -17,7 +17,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      showAllCards: true
     }
   },
 
@@ -28,7 +29,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      showAllCards: false
     })
   },
 
@@ -39,7 +41,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showSpades: false,
-      showFaceCards: false
+      showFaceCards: false,
+      showAllCards: false
     })
   },
 
@@ -50,7 +53,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showSpades: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      showAllCards: false
     })
   },
 
@@ -61,7 +65,8 @@ const Cards = React.createClass({
       showSpades: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      showAllCards: false
     })
   },
 
@@ -72,14 +77,35 @@ const Cards = React.createClass({
       showSpades: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: true
+      showFaceCards: true,
+      showAllCards: false
     })
+  },
+
+  showAllCards(){
+    this.setState({
+      showAllCards: true,
+      showDiamonds: false,
+      showAllCards: false,
+      showSpades: false,
+      showClubs: false,
+      showHearts: false,
+      showFaceCards: false,
+      showAllCards: true
+
+    })
+
   },
 
   render () {
   return (
         <div>
+
+         <br />
         {this.state.showAllCards && <AllCards/>}
+        <button onClick={() => this.showAllCards()}>Show AllCards</button>
+
+
         <button onClick={() => this.showSpades()}>Show Spades</button>
         {this.state.showSpades && <Spades/>}
         <button onClick={() => this.showHearts()}>Show Hearts</button>
