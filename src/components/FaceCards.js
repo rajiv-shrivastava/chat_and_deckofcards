@@ -9,7 +9,21 @@ render() {
   <div>{
   	data.map(card => (
        	<div id = {card.id} >
-       	    {card.facecard == true && <div className="col-sm-1 thumbnail card"> {card.rank} : {card.symbol} </div>}
+       	    {card.facecard == true && 
+          
+
+          <div className="col-sm-2">
+       	           <div className="card">
+       	               <div className="text-right"> {card.rank}  {card.symbol} </div>
+                           <h1 className="text-center">  {card.rank}  {card.symbol} </h1>
+       	           <br /><br />
+       	           {card.rank}  {card.symbol}
+       	           </div> 
+       	           <br />  
+       	        </div> 
+
+
+       	    }
        	</div>
     ))
   	}

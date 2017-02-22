@@ -72,7 +72,7 @@
 
 	{
 		"id": 10,
-		"rank": "jack",
+		"rank": "J",
 		"suit": "spade",
 		"symbol": "♠",
 		"facecard": true
@@ -80,7 +80,7 @@
 
 	{
 		"id": 11,
-		"rank": "queen",
+		"rank": "Q",
 		"suit": "spade",
 		"symbol": "♠",
 		"facecard": true
@@ -88,7 +88,7 @@
 
 	{
 		"id": 12,
-		"rank": "king",
+		"rank": "K",
 		"suit": "spade",
 		"symbol": "♠",
 		"facecard": true
@@ -96,7 +96,7 @@
 
 	{
 		"id": 13,
-		"rank": "ace",
+		"rank": "A",
 		"suit": "spade",
 		"symbol": "♠",
 		"facecard": false
@@ -176,7 +176,7 @@
 
 	{
 		"id": 23,
-		"rank": "jack",
+		"rank": "J",
 		"suit": "heart",
 		"symbol":"♥",
 		"facecard": true
@@ -184,7 +184,7 @@
 
 	{
 		"id": 24,
-		"rank": "queen",
+		"rank": "Q",
 		"suit": "heart",
 		"symbol":"♥",
 		"facecard": true
@@ -192,7 +192,7 @@
 
 	{
 		"id": 25,
-		"rank": "king",
+		"rank": "K",
 		"suit": "heart",
 		"symbol":"♥",
 		"facecard": true
@@ -200,7 +200,7 @@
 
 	{
 		"id": 26,
-		"rank": "ace",
+		"rank": "A",
 		"suit": "heart",
 		"symbol":"♥",
 		"facecard": false
@@ -280,7 +280,7 @@
 
 	{
 		"id": 36,
-		"rank": "jack",
+		"rank": "J",
 		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": true
@@ -288,7 +288,7 @@
 
 	{
 		"id": 37,
-		"rank": "queen",
+		"rank": "Q",
 		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": true
@@ -296,7 +296,7 @@
 
 	{
 		"id": 38,
-		"rank": "king",
+		"rank": "K",
 		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": true
@@ -304,7 +304,7 @@
 
 	{
 		"id": 39,
-		"rank": "ace",
+		"rank": "A",
 		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
@@ -384,7 +384,7 @@
 
 	{
 		"id": 49,
-		"rank": "jack",
+		"rank": "J",
 		"suit": "club",
 		"symbol":"♣",
 		"facecard": true
@@ -392,7 +392,7 @@
 
 	{
 		"id": 50,
-		"rank": "queen",
+		"rank": "Q",
 		"suit": "club",
 		"symbol":"♣",
 		"facecard": true
@@ -400,7 +400,7 @@
 
 	{
 		"id": 51,
-		"rank": "king",
+		"rank": "K",
 		"suit": "club",
 		"symbol":"♣",
 		"facecard": true
@@ -408,7 +408,7 @@
 
 	{
 		"id": 52,
-		"rank": "ace",
+		"rank": "A",
 		"suit": "club",
 		"symbol":"♣",
 		"facecard": false

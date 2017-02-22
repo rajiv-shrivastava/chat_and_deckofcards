@@ -12,13 +12,13 @@ const Cards = React.createClass({
   getInitialState() {
     return{
       cards: data,
+      initialCards: data,
       showSpades: false,
       showAllCards: true,
       showDiamonds: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false,
-      showAllCards: true
+      showFaceCards: false
     }
   },
 
@@ -29,8 +29,7 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false,
-      showAllCards: false
+      showFaceCards: false
     })
   },
 
@@ -41,8 +40,7 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showSpades: false,
-      showFaceCards: false,
-      showAllCards: false
+      showFaceCards: false
     })
   },
 
@@ -53,8 +51,7 @@ const Cards = React.createClass({
       showDiamonds: false,
       showSpades: false,
       showHearts: false,
-      showFaceCards: false,
-      showAllCards: false
+      showFaceCards: false
     })
   },
 
@@ -65,8 +62,7 @@ const Cards = React.createClass({
       showSpades: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false,
-      showAllCards: false
+      showFaceCards: false
     })
   },
 
@@ -77,21 +73,46 @@ const Cards = React.createClass({
       showSpades: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: true,
-      showAllCards: false
+      showFaceCards: true
     })
+  },
+
+  resetCards() {
+    this.setState({
+      cards: this.state.initialCards
+    })
+    console.log('reset cards', this.state );
+  },
+
+  shuffleCards() {
+    var shuffle = this.state.cards;
+    var currentIndex = shuffle.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = shuffle[currentIndex];
+    shuffle[currentIndex] = shuffle[randomIndex];
+    shuffle[randomIndex] = temporaryValue;
+  }
+
+  this.setState({cards: shuffle});
+
   },
 
   showAllCards(){
     this.setState({
       showAllCards: true,
       showDiamonds: false,
-      showAllCards: false,
       showSpades: false,
       showClubs: false,
       showHearts: false,
       showFaceCards: false,
-      showAllCards: true
 
     })
 
@@ -102,21 +123,23 @@ const Cards = React.createClass({
         <div>
 
          <br />
-        {this.state.showAllCards && <AllCards/>}
-        <button onClick={() => this.showAllCards()}>Show AllCards</button>
+        <button className="btn btn-primary" onClick={() => this.showAllCards()}>Show AllCards</button>
+         <button className="btn btn-primary"  onClick={() => this.shuffleCards()}>Shuffle Cards</button>
+         <button className="btn btn-primary"  onClick={() => this.resetCards()}>Reset Cards</button>
 
-
-        <button onClick={() => this.showSpades()}>Show Spades</button>
-        {this.state.showSpades && <Spades/>}
-        <button onClick={() => this.showHearts()}>Show Hearts</button>
+        <button className="btn btn-primary" onClick={() => this.showSpades()}>Show Spades</button>
+        <button className="btn btn-primary" onClick={() => this.showHearts()}>Show Hearts</button>
+        <button className="btn btn-primary"  onClick={() => this.showClubs()}>Show Clubs</button>
+        <button className="btn btn-primary"  onClick={() => this.showDiamonds()}>Show Diamonds</button>
+        <button className="btn btn-primary" onClick={() => this.showFaceCards()}>Show FaceCards</button>
+        <br/> <br/> <br/>
+        {this.state.showAllCards && <AllCards cards={this.state.cards}/>}
         {this.state.showHearts && <Hearts/>}
-        <button onClick={() => this.showClubs()}>Show Clubs</button>
         {this.state.showClubs && <Clubs/>}
-        <button onClick={() => this.showDiamonds()}>Show Diamonds</button>
         {this.state.showDiamonds && <Diamonds/>}
-        <button onClick={() => this.showFaceCards()}>Show FaceCards</button>
         {this.state.showFaceCards && <FaceCards/>}
-        <br/>
+        {this.state.showSpades && <Spades/>}
+
         </div>
   )
 }
