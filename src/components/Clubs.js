@@ -3,13 +3,13 @@ import React from 'react';
 var data = require('../components/Deck.json');
 
 
-const Spades = React.createClass({
+const Clubs = React.createClass({
 render() {
 	return (
   <div>{
   	data.map(card => (
        	<div id = {card.id} >
-       	    {card.suit == 'spade' && <div className="col-sm-1 thumbnail card"> {card.rank} : {card.symbol} </div>}
+       	    {card.suit == 'club' && <div className="col-sm-1 thumbnail card"> {card.rank} : {card.symbol} </div>}
        	</div>
     ))
   	}
@@ -18,4 +18,4 @@ render() {
 }
 })
 
-export default Spades;
+export default Clubs;

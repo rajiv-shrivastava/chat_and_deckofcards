@@ -2,7 +2,7 @@
 		"id": 1,
 		"rank": "2",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -10,7 +10,7 @@
 		"id": 2,
 		"rank": "3",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -18,7 +18,7 @@
 		"id": 3,
 		"rank": "4",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -26,7 +26,7 @@
 		"id": 4,
 		"rank": "5",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -34,7 +34,7 @@
 		"id": 5,
 		"rank": "6",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -42,7 +42,7 @@
 		"id": 6,
 		"rank": "7",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -50,7 +50,7 @@
 		"id": 7,
 		"rank": "8",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -58,7 +58,7 @@
 		"id": 8,
 		"rank": "9",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -66,7 +66,7 @@
 		"id": 9,
 		"rank": "10",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": false
 	},
 
@@ -74,7 +74,7 @@
 		"id": 10,
 		"rank": "jack",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": true
 	},
 
@@ -82,7 +82,7 @@
 		"id": 11,
 		"rank": "queen",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": true
 	},
 
@@ -90,7 +90,7 @@
 		"id": 12,
 		"rank": "king",
 		"suit": "spade",
-		"synbol": "♠",
+		"symbol": "♠",
 		"facecard": true
 	},
 
@@ -98,8 +98,8 @@
 		"id": 13,
 		"rank": "ace",
 		"suit": "spade",
-		"synbol": "♠",
-		"facecard": true
+		"symbol": "♠",
+		"facecard": false
 	},
 
 	{
@@ -203,13 +203,13 @@
 		"rank": "ace",
 		"suit": "heart",
 		"symbol":"♥",
-		"facecard": true
+		"facecard": false
 	},
 
 	{
 		"id": 27,
 		"rank": "2",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -217,7 +217,7 @@
 	{
 		"id": 28,
 		"rank": "3",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -225,7 +225,7 @@
 	{
 		"id": 29,
 		"rank": "4",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -233,7 +233,7 @@
 	{
 		"id": 30,
 		"rank": "5",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -241,7 +241,7 @@
 	{
 		"id": 31,
 		"rank": "6",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -249,7 +249,7 @@
 	{
 		"id": 32,
 		"rank": "7",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -257,7 +257,7 @@
 	{
 		"id": 33,
 		"rank": "8",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -265,7 +265,7 @@
 	{
 		"id": 34,
 		"rank": "9",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -273,7 +273,7 @@
 	{
 		"id": 35,
 		"rank": "10",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": false
 	},
@@ -281,7 +281,7 @@
 	{
 		"id": 36,
 		"rank": "jack",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": true
 	},
@@ -289,7 +289,7 @@
 	{
 		"id": 37,
 		"rank": "queen",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": true
 	},
@@ -297,7 +297,7 @@
 	{
 		"id": 38,
 		"rank": "king",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
 		"facecard": true
 	},
@@ -305,23 +305,23 @@
 	{
 		"id": 39,
 		"rank": "ace",
-		"suit": "diamonds",
+		"suit": "diamond",
 		"symbol":"♦",
-		"facecard": true
+		"facecard": false
 	},
 
 	{
 		"id": 40,
 		"rank": "2",
 		
-		"symbol":"♣","suit": "clubs",
+		"symbol":"♣","suit": "club",
 		"facecard": false
 	},
 
 	{
 		"id": 41,
 		"rank": "3",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -329,7 +329,7 @@
 	{
 		"id": 42,
 		"rank": "4",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -337,7 +337,7 @@
 	{
 		"id": 43,
 		"rank": "5",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -345,7 +345,7 @@
 	{
 		"id": 44,
 		"rank": "6",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -353,7 +353,7 @@
 	{
 		"id": 45,
 		"rank": "7",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -361,7 +361,7 @@
 	{
 		"id": 46,
 		"rank": "8",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -369,7 +369,7 @@
 	{
 		"id": 47,
 		"rank": "9",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -377,7 +377,7 @@
 	{
 		"id": 48,
 		"rank": "10",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": false
 	},
@@ -385,7 +385,7 @@
 	{
 		"id": 49,
 		"rank": "jack",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": true
 	},
@@ -393,7 +393,7 @@
 	{
 		"id": 50,
 		"rank": "queen",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": true
 	},
@@ -401,7 +401,7 @@
 	{
 		"id": 51,
 		"rank": "king",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
 		"facecard": true
 	},
@@ -409,7 +409,7 @@
 	{
 		"id": 52,
 		"rank": "ace",
-		"suit": "clubs",
+		"suit": "club",
 		"symbol":"♣",
-		"facecard": true
-	}]
+		"facecard": false
+		}]
