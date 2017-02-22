@@ -19,8 +19,7 @@ AllCommentList.propTypes = {
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
-  }).isRequired).isRequired,
-  onTodoClick: PropTypes.func.isRequired
+  }).isRequired).isRequired
 }
 
 export default AllCommentList

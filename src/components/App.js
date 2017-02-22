@@ -7,9 +7,13 @@ const App = () => (
   <div>
     <VisibleCommentList />
     <br />
+<div className="row">
         <AddComment />
+</div>
 <br />
+<div className="row col-sm-offset-1">
     <UndoRedo />
+    </div>
 
   </div>
 )

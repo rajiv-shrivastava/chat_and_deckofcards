@@ -20,16 +20,18 @@ let AddComment = ({ dispatch }) => {
         dispatch(addTodo(input.value, name))
         input.value = ''
       }}>
+
+
       <div className="col-sm-10">
             <div className="col-sm-7">
                 
-              <input ref={node => {
+               <input ref={node => {
                 input = node
               }} className="form-control" />
              </div>
 
             <div className="col-sm-3">
-            <select  onChange={(value) =>handleChange(value)}>
+             <select  onChange={(value) =>handleChange(value)} className="form-control">
                 <option value="john">John</option>
                 <option value="bob">Bob</option>
                 <option  value="wisely">Wisely</option>
