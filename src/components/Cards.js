@@ -19,7 +19,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      pickranodmCard: false
     }
   },
 
@@ -30,7 +31,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      pickranodmCard: false
     })
   },
 
@@ -41,7 +43,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showClubs: false,
       showSpades: false,
-      showFaceCards: false
+      showFaceCards: false,
+      pickranodmCard: false
     })
   },
 
@@ -52,7 +55,8 @@ const Cards = React.createClass({
       showDiamonds: false,
       showSpades: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      pickranodmCard: false
     })
   },
 
@@ -63,7 +67,8 @@ const Cards = React.createClass({
       showSpades: false,
       showClubs: false,
       showHearts: false,
-      showFaceCards: false
+      showFaceCards: false,
+      pickranodmCard: false
     })
   },
 
@@ -74,6 +79,7 @@ const Cards = React.createClass({
       showSpades: false,
       showClubs: false,
       showHearts: false,
+      pickranodmCard: false,
       showFaceCards: true
     })
   },
@@ -112,6 +118,7 @@ pickranodmCard() {
       showClubs: false,
       showHearts: false,
       showFaceCards: false,
+      shuffleCards: false
 
     })
    
