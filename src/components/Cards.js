@@ -5,6 +5,7 @@ import Clubs from './Clubs'
 import Hearts from './Hearts'
 import AllCards from './AllCards'
 import FaceCards from './FaceCards'
+import RandomCard from './RandomCard'
 
 var data = require('../components/Deck.json');
 
@@ -78,10 +79,7 @@ const Cards = React.createClass({
   },
 
   resetCards() {
-    this.setState({
-      cards: this.state.initialCards
-    })
-    console.log('reset cards', this.state );
+    location.reload();
   },
 
   shuffleCards() {
@@ -105,8 +103,24 @@ const Cards = React.createClass({
 
   },
 
+pickranodmCard() {
+  this.setState({
+      showAllCards: false,
+      pickranodmCard: true,
+      showDiamonds: false,
+      showSpades: false,
+      showClubs: false,
+      showHearts: false,
+      showFaceCards: false,
+
+    })
+   
+  },
+
+
   showAllCards(){
     this.setState({
+      cards: data,
       showAllCards: true,
       showDiamonds: false,
       showSpades: false,
@@ -123,15 +137,15 @@ const Cards = React.createClass({
         <div>
 
          <br />
-        <button className="btn btn-primary" onClick={() => this.showAllCards()}>Show AllCards</button>
-         <button className="btn btn-primary"  onClick={() => this.shuffleCards()}>Shuffle Cards</button>
-         <button className="btn btn-primary"  onClick={() => this.resetCards()}>Reset Cards</button>
-
-        <button className="btn btn-primary" onClick={() => this.showSpades()}>Show Spades</button>
-        <button className="btn btn-primary" onClick={() => this.showHearts()}>Show Hearts</button>
-        <button className="btn btn-primary"  onClick={() => this.showClubs()}>Show Clubs</button>
-        <button className="btn btn-primary"  onClick={() => this.showDiamonds()}>Show Diamonds</button>
-        <button className="btn btn-primary" onClick={() => this.showFaceCards()}>Show FaceCards</button>
+      <button className="btn btn-primary" onClick={() => this.showAllCards()}>Show AllCards</button>
+      <button className="btn btn-primary"  onClick={() => this.shuffleCards()}>Shuffle Cards</button>
+      <button className="btn btn-primary"  onClick={() => this.resetCards()}>Reset Cards</button>
+      <button className="btn btn-primary"  onClick={() => this.pickranodmCard()}>Pick Random Card</button>
+      <button className="btn btn-primary" onClick={() => this.showSpades()}> Spades</button>
+      <button className="btn btn-primary" onClick={() => this.showHearts()}> Hearts</button>
+      <button className="btn btn-primary"  onClick={() => this.showClubs()}> Clubs</button>
+      <button className="btn btn-primary"  onClick={() => this.showDiamonds()}> Diamonds</button>
+      <button className="btn btn-primary" onClick={() => this.showFaceCards()}>FaceCards</button>
         <br/> <br/> <br/>
         {this.state.showAllCards && <AllCards cards={this.state.cards}/>}
         {this.state.showHearts && <Hearts/>}
@@ -139,6 +153,7 @@ const Cards = React.createClass({
         {this.state.showDiamonds && <Diamonds/>}
         {this.state.showFaceCards && <FaceCards/>}
         {this.state.showSpades && <Spades/>}
+        {this.state.pickranodmCard && <RandomCard/>}
 
         </div>
   )
