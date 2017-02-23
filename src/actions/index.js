@@ -1,7 +1,7 @@
-let nextTodoId = 0
+let comments_id = 0
 export const addTodo = (text,name) => ({
   type: 'ADD_COMMENT',
-  id: nextTodoId++,
+  id: comments_id++,
   text,
   name
 })

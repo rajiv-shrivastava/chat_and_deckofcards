@@ -10,10 +10,7 @@ const comment = (state, action) => {
         completed: false
       }
  
-      return {
-        ...state,
-        completed: !state.completed
-      }
+      
     default:
       return state
   }
